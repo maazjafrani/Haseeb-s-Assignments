@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Assignment #8</title>
+    
+    <style> 
+        body{
+            background-color: lightyellow;
+            color:black;
+            font-size: 24px;
+        }
+        h1{
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+        input, select{
+            font-size: 24px;
+        }
+    
+    </style>
+    
+    <script>
+       function calculateTotal(){
+           //variable total:
+           var total=new Number;
+           //Starting value of total based on size selecting:
+           if(document.getElementById("small").selected){
+               total=10.00;
+            }
+            else if(document.getElementById("medium").selected){
+                total=12.50;
+           }
+            else if(document.getElementById("large").selected){
+                total=15.00;
+                    
+           }else{
+               alert("Please select a size.");
+               document.getElementById("size").style.color="red";
+               
+            }
+           
+           //Add Costs for Extra toppings:
+           //extra cheese:
+           if(document.getElementById("extracheese").checked){
+               total=total+2;
+
+              }
+           if(document.getElementById("extraBBQsauce").checked){
+               total=total+2.5;
+
+              }
+           if(document.getElementById("extrasausage").checked){
+               total=total+3;
+
+              }
+           if(document.getElementById("extrachillisauce").checked){
+               total=total+1;
+
+              }
+           if(document.getElementById("extraonions").checked){
+               total=total+2;
+
+              }
+           if(document.getElementById("extraTomato").checked){
+               total=total+2;
+
+              }
+           
+           
+           
+           
+           //Add 11.25% sales tax to the cost of food:
+                total=total + (total * 0.1125);
+           
+           
+           
+           //Add delivery charge:
+           if(document.getElementById("radioOption1").checked){
+               total=total+0;
+
+              }
+           else if(document.getElementById("radionOption2").checked){
+               total=total+3;
+
+              }
+           else{
+               alert("Please Select Pickup or Delivery.");
+               document.getElementById("pickupOrDelivery").style.color="red";
+              
+
+           }
+           
+           
+           
+           //write the result to the output:
+           document.getElementById("output").innerHTML="Your Total Cost is $"+ total.toFixed(2);
+                    
+           
+           
+       }//end of calculateTotal() function.
+    
+    </script>
+   
+    
+
+</head> 
+<body>
+    <h1>Order a Pizza</h1>
+    
+    <p id="size">
+        What size do you want?
+        <select name="size">
+            <optgroup>
+                <option value="" id="n-size"></option>
+                <option value="small" id="small">Small - $10.00</option>
+                <option value="medium" id="medium">Medium - $12.50</option>
+                <option value="large" id="large">Large - $15.00</option>
+            </optgroup>
+        </select>
+    
+    
+    </p>
+    
+    <p>
+        What Toppings Do You Want?
+        <br>
+        <input type="checkbox" id="extracheese" value="extracheese">Extra Cheese (add $2.00)
+        <br>
+        <input type="checkbox" id="extraBBQsauce" value="extraBBQsauce">Extra BBQ Sauce (add $2.50)
+        <br>
+        <input type="checkbox" id="extrasausage" value="extrasausage">Extra sausage (add $3.00)
+        <br>
+        <input type="checkbox" id="extrachillisauce" value="extrachillisaucet">Extra Chilli sauce (add $1.00)
+        <br>
+        <input type="checkbox" id="extraonions" value="extraonions">Extra Onions (add $2.00)
+        <br>
+        <input type="checkbox" id="extraTomato" value="extraTomato">Extra Tomato (add $2.00)
+        
+     
+    </p>
+
+    <p id="pickupOrDelivery">
+        Pickup or Delivery?
+        <br>
+        
+        <input type="radio" id="radioOption1" name="radio" > Pickup
+        
+        <br>
+        <input type="radio" id="radionOption2" name="radio"> Delivery (add $3.00)
+        
+        
+        
+    
+    </p>
+    
+    
+    <p>
+        <small>Note: 11.25% sales tax will be added to the cost of your pizza. </small>
+        <br><br>
+        <input type="button" value="Calculate Order" onclick="calculateTotal();">
+    </p>
+    
+    <p id="output">
+        &nbsp;
+    
+    </p>
+    
+   
+   
+</body>
+    
+</html>
+
+
+
+
+
+
+
+
+

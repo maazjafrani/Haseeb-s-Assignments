@@ -1,0 +1,168 @@
+
+body{
+    height: 1800px;
+    width: 1335px;
+    
+    background-image: url(mainpage-Home-background.jpg);
+}
+header{
+    border: 5px solid black;
+    background-color: #5D6D7E;
+    height: 80px;
+
+}
+
+li a{
+    text-decoration: none;
+    color: #F5B041 ;
+    font-weight: bold;
+    padding: 5px;
+    margin: 10px;
+    display:inline-block;
+    font-family: sans-serif;
+    font-size: 17px;
+    
+   
+}
+
+.cool-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height:2px;
+    background: #F5B041;
+    transition: width .3s;
+}
+
+.cool-link:hover::after{
+    width: 100%;
+    transition: width .3s;
+    
+}
+
+
+header ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+header ul li{
+    float: left;
+}
+
+.firstpage-first h1{
+    font-style: italic;
+    color:#F5B041;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    -webkit-text-stroke:1px black;
+    text-decoration: underline;
+    
+    font-size: 36px;
+    
+}
+.firstpage-first p{
+    font-style: italic;
+    color:black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+
+
+.firstpage-second{
+   margin-top: 5px; 
+   width: 1325px;
+   height: 600px;
+    border: 5px dashed #5D6D7E ;
+    background-image: url(mainpage-Home-center.jpg);
+    background-size: 1325px 600px;
+}
+.right{
+    
+    float:right;
+    
+}
+.firstpage-third{
+    background-color: #85929E;
+    border-top:solid;
+    margin-top:10px;
+    border-bottom: solid;
+}
+
+.firstpage-third h2{
+    font-size: 24px;
+    text-align: center;
+    
+    margin-top:10px;
+   
+}
+.firstpage-third p{
+    font-size: 20px;
+    text-align: center;
+    margin-top:10px;
+    color: #F5B041;
+    
+    
+   
+}
+.firstpage-fourth{
+    background-color: #85929E;
+    border-top:solid;
+    margin-top:10px;
+    border-bottom: solid;
+}
+
+.firstpage-fourth h2{
+    font-size: 24px;
+    text-align: center;
+    
+    margin-top:10px;
+}
+.firstpage-textboxes{
+    padding: 10px;
+}
+.firstpage-textboxes-send input{
+    padding: 5px;
+    margin:5px;
+    background-color: gray;
+}
+
+footer{
+    margin-top: 40px;
+    border: 5px solid black;
+    background-color: #5D6D7E ;
+    height: 50px;
+    color: #F5B041 ;
+    margin-bottom: 0px;
+    
+}
+
+.fas{
+    font-size: 15px;
+    margin-right: 4px;
+}
+
+.foot-to-left{
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+.foot-to-right{
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="JavaBasics">
+        <title>Java Basics</title>
+        <style>
+            body{
+                background-color: lightgray;
+                font-size: 24px;
+                
+            }
+            input{
+                font-size: 24px;
+            }
+            input:hover{
+                background-color: lightgreen;
+            }
+            
+            
+        
+        
+        </style>
+        <script>
+            //function to add numbers:
+            function addNumbers(){
+                //variable for box 1
+                var value1=parseFloat(document.getElementById("box1").value);
+                
+                
+                //variable for box 2
+                
+                var value2=parseFloat(document.getElementById("box2").value);
+                
+                
+                //variable total
+                var total=value1+value2;
+                
+                
+                //put total in the answer span
+                document.getElementById("answer").innerHTML=total;
+                
+                
+                //put a + sign in the sign span
+                document.getElementById("sign").innerHTML="+";
+                
+                
+                
+            }
+            //Function to subtract number:
+            function subtractNumbers(){
+                //variable for box 1
+                var value1=parseFloat(document.getElementById("box1").value);
+                
+                
+                //variable for box 2
+                
+                var value2=parseFloat(document.getElementById("box2").value);
+                
+                
+                //variable total
+                var total=value1-value2;
+                
+                
+                //put total in the answer span
+                document.getElementById("answer").innerHTML=total;
+                
+                
+                //put a + sign in the sign span
+                document.getElementById("sign").innerHTML="-";
+               
+                
+            }
+            
+            //Function to Multiply number:
+            function multiplyNumbers(){
+                //variable for box 1
+                var value1=parseFloat(document.getElementById("box1").value);
+                
+                
+                //variable for box 2
+                
+                var value2=parseFloat(document.getElementById("box2").value);
+                
+                
+                //variable total
+                var total=value1*value2;
+                
+                
+                //put total in the answer span
+                document.getElementById("answer").innerHTML=total;
+                
+                
+                //put a + sign in the sign span
+                document.getElementById("sign").innerHTML="x";
+                
+            }
+            
+            //Function to divide number:
+            function divideNumbers(){
+                //variable for box 1
+                var value1=parseFloat(document.getElementById("box1").value);
+                
+                
+                //variable for box 2
+                
+                var value2=parseFloat(document.getElementById("box2").value);
+                
+                //variable total
+                var total=value1/value2;
+                
+                
+                //put total in the answer span
+                document.getElementById("answer").innerHTML=total;
+                
+                
+                //put a + sign in the sign span
+                document.getElementById("sign").innerHTML="&divide;";
+                
+            }
+            
+            //Function to clearAll the values:
+            function clearAll(){
+                //clear the value in box1
+                document.getElementById("box1").value=null;
+                //clear the value in box2
+                document.getElementById("box2").value=null;
+                //clear the value in answer
+                document.getElementById("answer").innerHTML="";
+                //clear the value for sign
+                document.getElementById("sign").innerHTML="&nbsp;";
+                
+                
+            }
+        </script>
+        
+    </head>
+
+    <body>
+        <h1>Math with Java Script</h1>
+        
+        <input type="text" size="5" id="box1">
+        
+        <span id="sign">
+            &nbsp; &nbsp;
+        </span>
+        
+        <input type="text" size="5" id="box2">
+        =
+        
+        <span id="answer">
+            &nbsp;
+        </span>
+        <br><br>
+        
+        <input type="button" value="Add" onclick="addNumbers();"> 
+        
+        <input type="button" value="Subtract" onclick="subtractNumbers();"> 
+        
+        <input type="button" value="Multiply" onclick="multiplyNumbers();"> 
+        
+        <input type="button" value="Divide" onclick="divideNumbers();"> 
+        
+        <input type="button" value="Clear" onclick="clearAll();"> 
+        
+       
+       
+
+    </body>
+</html>

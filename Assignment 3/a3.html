@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <!-- Below is Boilerplate -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Tables and Forms">
+            <title> Tables and Forms </title>
+        </head>
+        <body BGCOLOR="white" TEXT="green">
+            <h1>Survey Form</h1>
+            <form>
+                <table border="1" cellpadding="20px">
+                    <tr>
+                        <td>Enter your name:</td>
+                        <td>
+                            <label for"First Name">First Name:</label>
+                            <input type="text" id="First Name" placeholder="Enter your First Name" >
+                        </td>
+                        <td>
+                            <label for="LastName">Last Name:</label>
+                            <input type="text" id="LastName" placeholder="Enter your Last Name">
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Enter your Email and Contact:</td>
+                        <td>
+                            <label for"Email">Email:</label>
+                            <input type="email" id="Email" placeholder="Enter your Email">
+                        
+                        </td>
+                        <td>
+                            <label for"Contact">Phone Number:</label>
+                            <input type="tel" id="Contact" placeholder="Enter your Phone Number" >
+                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Please Enter your Major at Depaul:</td>
+                        <td>
+                            <label for"Major">Major:</label>
+                            <select id="select">
+                                <optgroup label="Major">
+                                    <option>Computer Engineering</option>
+                                    <option>Computer Science</option>
+                                    <option>Bussiness Administration</option>
+                                    <option>Chemistry</option>
+                                    <option>Cyber Security</option>
+                                    <option>English</option>
+                                    <option>Finance</option>
+                                    <option>Marketing</option>
+                                    <option>Management</option>
+                                    <option>Mangement of Information Science</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Which year are you in?</td>
+                        <td>
+                            <label for="First">First:</label>
+                            <input type="radio" id="First" name="year" checked>
+                            
+                            <label for="Second">Second:</label>
+                            <input type="radio" id="Second" name="year">
+                            
+                            <label for="Third">Third:</label>
+                            <input type="radio" id="Third" name="year">
+                            
+                            <label for="Fourth">Fourth:</label>
+                            <input type="radio" id="Fourth" name="year">
+                        </td>
+                    </tr>
+                    <tr>
+                    
+                        <td>We would like to ask that how satisfied are you with<br> the Studies(your Courses) at Depaul?</td>
+                         <td colspan="2">
+                            <label for="Not Satisfied">Not Satisfied</label>
+                            <input type="radio" id="Not Satisfied" name="satisfaction" checked>
+                            
+                            <label for="Fairly Satisfied">Fairly Satisfied</label>
+                            <input type="radio" id="Fairly Satisfied" name="satisfaction">
+                            
+                            <label for="Neither Satisfied nor Dissatisfied">Neither Satisfied nor Dissatisfied</label>
+                            <input type="radio" id="Neither Satisfied nor Dissatisfied" name="satisfaction">
+                            
+                            <label for="Satisfied">Satisfied</label>
+                            <input type="radio" id="Satisfied" name="satisfaction">
+                             
+                            <label for="Totally Satisfied">Totally Satisfied</label>
+                            <input type="radio" id="Totally Satisfied" name="satisfaction">
+                        </td>
+                    </tr>
+                    <tr>
+                    
+                        <td>How satisfied are you with the Teachers at Depaul?</td>
+                         <td colspan="2">
+                            <label for="Not Satisfied">Not Satisfied</label>
+                            <input type="radio" id="Not Satisfied" name="teacher" checked>
+                            
+                            <label for="Fairly Satisfied">Fairly Satisfied</label>
+                            <input type="radio" id="Fairly Satisfied" name="teacher">
+                            
+                            <label for="Neither Satisfied nor Dissatisfied">Neither Satisfied nor Dissatisfied</label>
+                            <input type="radio" id="Neither Satisfied nor Dissatisfied" name="teacher">
+                            
+                            <label for="Satisfied">Satisfied</label>
+                            <input type="radio" id="Satisfied" name="satisfaction">
+                             
+                            <label for="Totally Satisfied">Totally Satisfied</label>
+                            <input type="radio" id="Totally Satisfied" name="teacher">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>What do you think that should be changed?</td>
+                        <td colspan="2">
+                            <label for="Teacher">Teacher:</label>
+                            <input type="checkbox" id="Teacher">
+                            <label for="Courses">Courses:</label>
+                            <input type="checkbox" id="Courses">
+                            <label for="Other">Other:</label>
+                            <input type="checkbox" id="Other">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <label for="TextBox">Write what do you think that should be changed in order to Improve the Quality Education at Depaul?
+                            </label>
+                            <br>
+                            <textarea id="TextBox" rows="3" cols="50" placeholder="Write your Commments here!"></textarea>
+                        
+                        
+                        </td>
+                    
+                    
+                    </tr>
+                    <tr>
+                       <td colspan="3">
+                            <input type="submit" value="Submit" >
+                            <input type="reset" value="Clear">
+                        
+                       </td>
+                    
+                    
+                    
+                    </tr>
+                  </table>
+            
+            </form>
+            <br>
+            <br>
+            <br>
+            
+        
+        </body>
+</html>
